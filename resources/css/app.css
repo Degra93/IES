@@ -1,8 +1,74 @@
 @import 'bootstrap';
 
 
-/* NAVABAR  */
+body{
+    background-color: #be96765b ;
+    
+}
 
-.bg-custom {
-  background-color: rgb(202, 130, 14) !important;
+nav,footer{
+    background-color: #f1a33c;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 30px;
+  }
+
+  /* FOOTER  */
+footer{
+    width: 100% !important;
+}
+  
+  .context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* .social-container .col {
+    
+} */
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+   
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
 }
