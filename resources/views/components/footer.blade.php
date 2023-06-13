@@ -1,9 +1,9 @@
-<footer class="container-fluid w-100  text-black   text-center">
+<footer class="container-fluid w-100  text-black pt-5  text-center bottom">
     <div >
       <div class="row row-30">
         <div class="col-md-4 col-xl-5">
           <div class="pr-xl-4"><a class="brand" href="index.html">
-            <img class="p-3" class="brand-logo-light" src=  alt="logo" width="140" height="140" srcset="{{ URL::asset('img/logo.jpg') }}"></a>
+            <img class="p-3" class="brand-logo-light" data-tilt data-tilt-glare data-tilt-max-glare="0.8" src=  alt="logo" width="140" height="140" srcset="{{ URL::asset('img/logo.jpg') }}"></a>
             <p>We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
             <!-- Rights-->
             <p class="rights"><span>©  </span><span class="copyright-year">2020</span><span> </span><span>Company</span><span> - </span><span>All Rights Reserved.</span></p>

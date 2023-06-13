@@ -1,39 +1,41 @@
+<section class="hero mt-3">
+  <div class="spacer"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 text-center " data-aos="fade-up-right" data-aos-duration="3000">
+              <div>
+                  <div class="text-label mt-5">
+                      <h2 class="display-7">IES TELEVISION & SMART TECHNOLOGY</h2>
+                  </div><br>
+                  <div class="text-hero-bold">
+                      <h1 class="display-1">Tecnologia all'avanguardia</h1>
+                  </div><br>
+                  <div class="text-hero-regular">
+                      <h6>"Non esistono problemi,esistono solo soluzioni ai problemi" </h6>
+                  </div><br>
+                  <div class="cta mb-sm-2">
+                    <a class="btn btn-custom  "data-tilt data-tilt-glare data-tilt-max-glare="0.8" href="">Richiedi un preventivo</a>
 
-<header class="container-fluid pt-5">
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-6 mt-5">
+              <img class="img-fluid" data-aos="zoom-in" data-aos-duration="3000"
+                  src="{{ URL::asset('img/logo.jpg') }}" alt="header-image">
+          </div>
+      </div>
+  </div>
+</section>
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active img-fluid" style="background-image: url({{ URL::asset('img/antenna.jpg') }})">
-          <div class="carousel-caption">
-            <h5 class="text-black">I NOSTRI LAVORI</h5>
-            
-          </div>
-        </div>
-        <div class="carousel-item img-fluid" style="background-image: url({{ URL::asset('img/Servizi.jpg') }})">
-          <div class="carousel-caption">
-            <h5 class="text-black">I NOSTRI SERVIZI</h5>
-            
-          </div>
-        </div>
-        <div class="carousel-item img-fluid" style="background-image: url({{ URL::asset('img/pannelli-solari.jpg') }})">
-          <div class="carousel-caption">
-            <h5 class="text-white">INNOVAZIONE</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+<section class="container" data-aos="fade-up-right" data-aos-duration="3000">
+  <img class="img-fluid" src="{{ URL::asset('img/pannelli-solari.jpg') }}" alt="">
+</section>
+
+
+
+{{-- <section class="container-fluid p-5 w-100 text-center  ">
+  <div class="container">
+  <img class="img-fluid" src="{{ URL::asset('img/servizi.jpg') }}" alt="">
+      <a class="btn btn-custom  "data-tilt data-tilt-glare data-tilt-max-glare="0.8" href="">Richiedi un preventivo</a>
     </div>
-  </header>
+  </section> --}}
