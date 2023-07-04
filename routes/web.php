@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RequestQuoteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,3 +29,9 @@ Route::get('/servizi', function () {
 Route::get('/i-nostri-lavori', function () {
     return view('i-nostri-lavori');
 })->name('i-nostri-lavori');
+
+Route::get('/richiedi-preventivo', function () {
+    return view('richiedi-preventivo');
+})->name('richiedi-preventivo');
+
+Route::get('/richiesta/preventivo',[RequestQuoteController::class, 'RequestQuote',])->name('request-quote');

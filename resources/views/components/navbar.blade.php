@@ -1,3 +1,4 @@
+<div style="height: 80px" class="position-relative"></div>
 
 <nav class="navbar navbar-expand-lg  fixed-top  fw-bold">
     <div class="container-fluid">
@@ -15,6 +16,8 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('i-nostri-lavori') }}">I nostri lavori</a>
+          </li><li class="nav-item">
+            <a class="nav-link" href="{{ route('richiedi-preventivo') }}">Richiedi un preventivo</a>
           </li>
         </ul>
       </div>

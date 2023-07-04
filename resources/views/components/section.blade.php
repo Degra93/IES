@@ -15,8 +15,7 @@
         </div>
         <div class="row">
             <div class="col-12 col-md-5 col-lg-4 d-flex flex-column pt-4">
-                <div class="card mb-7 rounded-5 tilt" data-aos="fade-uP" data-aos-duration="3000" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                style="min-height: 400px; background-image: url({{ URL::asset('img/logo.jpg') }}); background-position: center center;">
+                <div class="card mb-7 rounded-5 tilt bordered" data-tilt data-tilt-glare data-tilt-max-glare="0.8" style="min-height: 400px; background-image: url({{ URL::asset('img/logo.jpg') }}); background-position: center center;">
                 <div class="card-body my-auto btn ">
                     <a class="mb-0 display-5 text-warning fw-bold ">CHI SIAMO</a>
                    
@@ -28,7 +27,7 @@
 
 
 
-            <div class=" btn card card-body mb-7 my-auto px-md-10 text-center text-md-start rounded-5 tilt" data-aos="fade-uP" data-aos-duration="3000" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+            <div class=" btn card card-body mb-7 my-auto px-md-10 text-center text-md-start rounded-5 tilt" data-tilt data-tilt-glare data-tilt-max-glare="0.8"
             style="min-height: 400px; background-image: url({{ URL::asset('img/elettricista.jpg') }}); background-position: center center;">
 
 
