@@ -6,11 +6,20 @@ use Illuminate\Http\Request;
 use App\Mail\RequestQuote;
 use Illuminate\Support\Facades\Mail;
 
+
+
 class RequestQuoteController extends Controller
 {
-    public function RequestQuote($email='turboinferno50@hotmail.com')
+    
+    public function RequestQuote(Request $request)
     {
-        Mail::to('stefanociangola@katamail.com')->send(new RequestQuote($email));
-        return redirect('/')->with('success','Complimenti! Hai richiesto un preventivo');
+        $email = $request->input('email');
+       
+        Mail::to('turboinferno50@hotmail.com')->send(new RequestQuote('turboinferno50@hotmail.com',$email)); //al posto di turboinf... inserite la mail configurata nel file .env
+
+        if($request->input('sendmetoo')){
+        Mail::to($email)->send(new RequestQuote('turboinferno50@hotmail.com',$email));
+        }
+        return redirect('/')->with('message','Complimenti! Hai richiesto un preventivo');
     }
 }

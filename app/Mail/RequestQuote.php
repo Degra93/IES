@@ -15,10 +15,12 @@ class RequestQuote extends Mailable
     use Queueable, SerializesModels;
 
    public $email;
+   public $guest;
 
-    public function __construct($email)
+    public function __construct($email,$guest)  // $email è la mail dell'impresa, mentre guest è la mail del cliente che richiede il preventivo
     {
         $this->email=$email;
+        $this->guest=$guest;
     }
 
     /**
@@ -28,7 +30,7 @@ class RequestQuote extends Mailable
     {
         return new Envelope(
             from: new Address($this->email),
-            subject: 'Request Quote',
+            subject: 'Richiesta preventivo',
         );
     }
 
@@ -39,6 +41,7 @@ class RequestQuote extends Mailable
     {
         return new Content(
             view: 'mail.request_quote',
+            
         );
     }
 

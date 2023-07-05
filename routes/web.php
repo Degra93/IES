@@ -34,4 +34,4 @@ Route::get('/richiedi-preventivo', function () {
     return view('richiedi-preventivo');
 })->name('richiedi-preventivo');
 
-Route::get('/richiesta/preventivo',[RequestQuoteController::class, 'RequestQuote',])->name('request-quote');
+Route::post('/richiedi-preventivo',[RequestQuoteController::class, 'RequestQuote'])->name('request-quote');
